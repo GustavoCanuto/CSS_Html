@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Currículo </title>
+</head>
+<body>
+    <h1>Cadastro de Currículo</h1>
+
+<form method="get">
+
+<table>
+
+<tr>
+    <td>
+    <fieldset>
+        <legend>Informações Pessoais</legend>
+
+        <label for="nome"> Nome </label>
+        <input type="text" id="nome" name="nome" placeholder="Digite o seu nome"> <br>
+
+        <label for="email1"> Email </label>
+        <input type="email" id="email1" name="email" placeholder="Digite o seu email"> <br>
+
+        <label for="data"> Data </label>
+        <input type="date" id="data" name="data" > <br>
+
+        <label for="altura"> Altura </label>
+        <input type="number" id="altura" name="altura" min="1" max="3" step="0.01" > <br>
+
+        <label for="site"> Nome </label>
+        <input type="text" id="site" name="site" placeholder="Facebook, Linkedin"> <br>
+
+        Estado: <select name="Estado">
+
+            <option value="SP"> São Paulo</option>
+            <option value="AM"> Amazonas </option>
+
+        </select>
+
+        <br>
+
+        Sexo: 
+        <input type="radio" id="Masculino" name="sexo" value="masculino">
+        <label for="Masculino">Masculino</label>
+
+        <input type="radio" id="Feminino" name="sexo" value="feminino">
+        <label for="Feminino">Feminino</label>
+
+    </fieldset>
+    </td>
+</tr>
+
+<tr>
+    <td>
+    <fieldset>
+
+        <legend>Endereço</legend>
+
+        <label for="cep"> CEP </label>
+        <input type="text" id="cep" name="cep"> <br>
+
+        <label for="endereço"> Endereço </label>
+        <input type="text" id="endereço" name="endereço"> <br>
+        
+    </fieldset>
+
+</td>
+</tr>
+
+<tr>
+    <td>
+    <fieldset>
+
+        <legend>Contato</legend>
+ 
+        <label for="telefone"> Telefone </label>
+        <input type="tel" id="telefone" name="telefone" maxlength="9"> <br>
+
+        <label for="cel"> Celular </label>
+        <input type="tel" id="cel" name="cel" maxlength="10"> <br>
+        
+    </fieldset>
+
+</td>
+</tr>
+
+<tr>
+    <td>
+    <fieldset>
+
+        <legend>Conhecimentos</legend>
+        
+        <input type="checkbox" id="opcao1" name="opcao1" value="html">
+        <label for ="opcao1"> HTML </label>
+
+        <input type="checkbox" id="opcao2" name="opcao2" value="css">
+        <label for ="opcao2"> CSS </label>
+
+        <input type="checkbox" id="opcao3" name="opcao3" value="javascript">
+        <label for ="opcao3"> javascript </label>
+
+        <br>
+
+        <label for="conhecimento"> Mais Conhecimentos </label> 
+        <textarea id="conhecimento" name="conhecimento" rows="10" cols="25" placeholder="Digite os seus conhecimentos"></textarea>
+            
+        
+
+
+
+    </fieldset>
+</td>
+</tr>
+
+</table>
+
+    <input type="submit" value="Enviar">
+
+</form>
+    
+</body>
+</html>
